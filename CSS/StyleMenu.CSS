@@ -64,13 +64,23 @@ body{
    
 }
 
+.divTitle a{
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+    padding: 0px; 
+}
+
+.divTitle a:hover{
+    color: purple; 
+}
+
 .horizontal a {
     text-decoration: none; 
     background-color: rgb(112, 0, 240);
     color: white; 
     font-weight: bold; 
-    padding: 0px; 
-    color: white;
+    padding: 10px; 
 
 }
 
