@@ -20,20 +20,22 @@ body {
 /* HEADER */
 nav {
     background-color: rgb(112, 0, 240);
-    width: 98vw;
 }
 
 nav ul {
-    width: 100%;
     list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
+    overflow: hidden;
     padding: 0;
     margin: 0;
 }
-
+nav li{
+    float: left;
+}
 nav a {
-    font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 20px 20px;
+    font-size: 15px;
     text-decoration: none;
     color: white;
 }
@@ -96,3 +98,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.active {
+    color: yellow;;
+  }
