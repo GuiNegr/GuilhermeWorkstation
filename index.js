@@ -12,9 +12,6 @@ const divMain = document.querySelector('.divMainH1eFoto')
 const sectionFoto = document.querySelectorAll('.divSectionFotos')
 const sectionfotoFirst = document.getElementById('sectionFirst')
 const sectionfotoTwo = document.getElementById('sectionTwo')
-const sectionfotoThree = document.getElementById('sectionThre')
-const sectionfotoFour = document.getElementById('sectionFour')
-const sectionfotoFive = document.getElementById('sectionFive')
 
 //o primeiro parametro do gsap é o elemento que quermos animar
 //o segundo parametro são as propriedades do css que quero definir o valor
@@ -34,7 +31,15 @@ gsap.to(paragrafo, {
   duration: 1.5,
 }); */
 
-tl.from(paragrafo, {
+
+
+
+
+
+
+
+tl.set("body",{overflow:"hidden"}).
+from(paragrafo, {
   opacity: 0,
   duration: 1,
 }).
@@ -51,33 +56,21 @@ to(paragrafo,
   duration: 1.5,
   ease: "power4.inOut",
   scale: 0,
-}, "<").from(sectionfotoFirst,{
+}, "<")
+.from(sectionfotoFirst,{
   rotateZ: 50,
   duration: 1.2,
   ease: "power4.out",
   scale: 0,
-},"<").from(sectionfotoTwo,{
+},"<")
+.from(sectionfotoTwo,{
   rotateZ: 55,
   duration: 1.4,
   ease: "power4.out",
   scale: 0,
-},"<").from(sectionfotoThree,{
-  rotateZ: 60,
-  duration: 1.6,
-  ease: "power4.out",
-  scale: 0,
-},"<").from(sectionfotoFour,{
-  rotateZ: 65,
-  duration: 1.8,
-  ease: "power4.out",
-  scale: 0,
-},"<")
-.from(sectionfotoFive,{
-  rotateZ: 70,
-  duration: 2,
-  ease: "power4.out",
-  scale: 0,
-},"<");
+},"<").set("body",{overflow:"auto"}).set(div,{
+  zIndex: "-1"
+})
 
 
   
