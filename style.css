@@ -1,0 +1,183 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #e2e2e2;
+}
+
+
+/*esse responsivo utilizar sempre no meu container de agrupamento geral,aquele que agrupa todos os meus items*/
+.responsivo{
+    max-width:1920px;
+    margin: 0 auto;
+    /* o width é recomendado utilizar esse width quando não está claro a margem ideal. assim desse metodos eu garanto que sempre haverá um padding
+    lateral acontenendo em todo corpo do projeto
+    */
+    width: 80%;
+}
+
+
+/*Tamanhos rem:ele faz com que ele se auto corrija a tela do usuario, 1 rem equivale a 16px*/
+.textos{
+    color: #121212;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+.menu {
+    display: flex;
+    /*Space Betwen é o espaçamento de elementos automaticos com base na classe pai*/
+    margin-top: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menuNav ul{
+    display: flex;
+    /*O gape ele já aplica os espaçamentos dentro dos filhos da classe*/
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.menuNav ul li a{
+    padding: 8px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menuNav ul li a:hover{
+    color: #b1b1b1;
+}
+
+/*
+o margin é um espaçamento envolta do elemento
+*/
+
+/*
+o padding é o espaçamento de um item dentro de outro
+*/
+.classeStroke{
+    border-bottom: 1px solid #121212;
+    padding-bottom: 8px;
+}
+
+.setaSpan{
+    margin-left: 4px;
+    font-size: 20px;
+}
+  
+
+.divMainH1eFoto{
+    display: flex;
+    margin-top: 8rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divMainH1eP h1{
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height:  115%;
+    width: 49.375rem;
+}
+
+.divMainH1eP p{
+    max-width: 65ch;
+    line-height: 130%;
+}
+
+.divMainFoto{
+    clip-path: circle(50% at 50% 50%);
+    width: 364px;
+    height: 364px;
+    background: url(imagens/Rectangle\ 5.png) no-repeat;
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    background: #e2e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#g_sap{
+    font-size: 3.75rem;
+    font-weight: 500;
+}
+
+.secondMain{
+    margin-top: 20px;
+    background-color: #b9b9b9 ;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.divTextH1{
+    align-items: flex-start;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 20px;
+    margin: 10px;
+    line-height: 130%;
+}
+
+.divSectionFotos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    flex-direction: grid;
+    justify-content: center;
+}
+
+.ContainerFoto{
+    gap: 0.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: 557px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.ContainerFoto img{
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.containerTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 10px;
+    line-height: 150%;
+}
+.containerTexto p{
+    line-height: 120%;
+    font-size: 26px;
+}
+
+.containerTexto h1{
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.overlay{
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(130, 231, 245));
+    width: 100%;
+    height: 100%;
+}
+

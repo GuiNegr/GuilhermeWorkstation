@@ -4,41 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme WorkStation</title>
-    <link rel="stylesheet" href="CSS/StyleGlobal.css">
-    <link rel="icon" href="icon/livro-magico.png" type="image/png">
+    <title>Portfolio</title>
+
+    <!--Para remover os styles padrão do html-->
+    <link rel="stylesheet" href="styleReset.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!---Grind Stock(Greensock(GSAP))-->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!--Import de fonte do Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="MainDiv">
-        <nav>
+
+    <header class="responsivo  menu">
+        <a href="https://github.com/GuiNegr" class="textos"  title="Meu GitHub">Guilherme Negreiros</a>
+        <nav class="menuNav">
             <ul>
-                <li style="float: left;"><a class="active" href="index.html">Home</a></li>
-                <li><a href="Lukarius.html">Lukarius</a></li>
-                <li><a href="freeLa.html">FreeLancer</a></li>
-                <li><a href="TaskList.html">TaskList</a></li>
-                <li><a href="consult.html">Consult</a></li>
-                <li><a href="cifraDeCesar.html">Cifra de Cezar</a></li>
-                <li><a href="platafomraCurso.html">Plataforma curso</a></li>
-                <li><a href="timMaia.html">Tim Maia Project</a></li>
-                <li><a href="demais.html">Demais Projetos</a></li>
-                <li><a href="about.html">Sobre min</a></li>
-                <li><a href="Blog.html">Blog</a></li>
+                <!--Somente listar oque irá ser utilizado para navegar na pagina-->
+                <li><a href="#" class="textos">Projetos</a></li>
+                <li><a href="#" class="textos">Sobre mim</a></li>
             </ul>
         </nav>
-        <div class="divTitle">
-            <h1>Bem Vindo ao meu ambiente =D</h1>
-            <p>
-                Esse site lista os maiores projetos feitos por min ou em grupo, seja na faculdade ou em estudos
-                proprios.
-            </p>
+        <!--Depois inclimentar um script para ao clicar no botão ele copiar o email,dar uma indicação do email copiado junto. como um alert porem legal-->
+        <button type="submit" class="textos classeStroke">GuiNegreiros2023@Outlook.com <span class="setaSpan">↘</span> </button>
+    </header>
+
+    <main class="responsivo">
+        <div class="divMainH1eFoto">
+            <div class="divMainH1eP">
+                <h1>Desenvolvedor em seu caminho
+                    de aprendizagem
+                </h1>
+                <p class="textos ">
+                    Meu nome é Guilherme,nasci em 2003. tenho o foco de me tornar um desenvolvedor.
+                    no momento estou trabalhando como analista de sistema, e estou para me formar.
+                    uso meu tempo para desenvolver projetos para aumentar meus conhecimentos e assim realizar meu objetivo.
+                </p>
+            </div>
+            <div class="divMainFoto">
+
+            </div>
         </div>
-        <div class="divImg">
-            <img src="IMG/Developer activity-amico.svg" alt="ProgramingChar">
+
+        
+    <div class="secondMain">
+        <div class="divTextH1">
+            <h1 id="projetosh1">Projetos</h1>
         </div>
+
+        <div class="divSectionFotos">
+
+            <div class="ContainerFoto" id="sectionFirst">
+
+                <img src="imagens/GitTaskLogin.jpg" alt="TaskListProject">
+
+                <div class="containerTexto">
+                    <h1>TaskList</h1>
+                    <p>Projeto feito utilizando Jsp, para fins aprendizagem, criei o projeto com o intuito de treinar minhas habilidades com css,html e java</p>
+                </div>
+            </div>
+            <div class="ContainerFoto" id="sectionTwo">
+
+                <img src="imagens/Consult.png" alt="TaskListProject">
+
+                <div class="containerTexto">
+                    <h1>Consult</h1>
+                    <p>Projeto feito para aperfeiçuar meus conhecimentos em java orientação objetos, projeto utiliza a biblioteca SWING e mySql</p>
+                </div>
+            </div>
+
+
+            <div class="ContainerFoto" id="sectionThre">
+
+                <img src="imagens/PlataformaCurso2.png" alt="TaskListProject">
+
+                <div class="containerTexto" >
+                    <h1>Plataforma Curso</h1>
+                    <p>Projeto feito em parceria com um colega de classe, para a criação de uma plataforma web de cursos. utilizando JSP</p>
+                </div>
+            </div>
+
+            <div class="ContainerFoto" id="sectionFour">
+
+                <img src="imagens/PiiNova.png" alt="TaskListProject">
+
+                <div class="containerTexto" >
+                    <h1>NOVA</h1>
+                    <p>um e-commerce criado em um trabalho de conclusão de semestre,nesse projeto atuei no backend e no frontend criando ligações e chamadas de api com o js</p>
+                </div>
+            </div>
+
+               
+        <div class="ContainerFoto" id="sectionFive">
+
+            <img src="imagens/purplehat.png" alt="TaskListProject">
+
+            <div class="containerTexto" >
+                <h1>PurpleHat</h1>
+                <p>Projeto feito utilizando Spring,html,css,js e mysql. a ideia do projeto é construir uma rede social funcional, aonde podemos logar e publicar ideias. o projeto foi feito com o intuito de treinar meus conhecimentos com restApi, e manipulação do dom com o js</p>
+            </div>
+        </div>
+
+        </div>
+
+     
 
     </div>
 
+    </div>
+
+    </main>
+
+
+    <div class="overlay">
+        <p id="g_sap">Guilherme Negreiros</p>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
