@@ -404,3 +404,38 @@ body {
         font-size: 22px;
     }
 }
+/* Ajustes para telas muito pequenas (exemplo: smartphones em modo retrato) */
+@media (max-width: 480px) {
+    .divMainH1eP h1 {
+        font-size: 2rem;
+    }
+
+    .divMainFoto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menuNav ul {
+        gap: 0.5rem;
+    }
+
+    .containerTexto p {
+        font-size: 18px;
+    }
+
+    .containerTexto h1 {
+        font-size: 20px;
+    }
+
+    .divTextH1 {
+        font-size: 28px;
+    }
+
+    .divSectionFotos {
+        gap: 1.5rem;
+    }
+
+    .ContainerFoto img {
+        height: 250px;
+    }
+}
