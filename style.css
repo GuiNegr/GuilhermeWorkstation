@@ -289,7 +289,7 @@ body {
 }
 
 .divTextH1 {
-    align-items: flex-start;
+    display: flex;
     font-size: 48px;
     font-weight: 500;
     padding: 20px;
@@ -298,12 +298,9 @@ body {
 }
 
 .divSectionFotos {
-    display: flex;
-    align-items: center;
     flex-wrap: wrap;
     gap: 6rem;
     flex-direction: grid;
-    justify-content: center;
 }
 
 .ContainerFoto {
@@ -455,9 +452,11 @@ criando variaveis para reutilizar no css
     font-weight: 600;
     font-size: 3rem;
     align-items: center;
+    
 }
 
 .firstLetter span{
+   
     animation-name: brilho;
     animation-duration: 4s;
     animation-timing-function: ease-in-out;
@@ -487,7 +486,7 @@ criando variaveis para reutilizar no css
 @keyframes brilho{
 
     0%{
-        color:#fff;
+        color:#b8a3f1;
         text-shadow: 
         0 0 0 50px var(--colorPurple), 0 0 75px var(--colorPurple),
         0 0 100px (--colorPurple);
