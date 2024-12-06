@@ -14,6 +14,8 @@ const sectionfotoTwo = document.getElementById('sectionTwo');
 const sectionfotoThre = document.getElementById('sectionThre');
 const sectionfotoFour = document.getElementById('sectionFour');
 const sectionfotofive = document.getElementById('sectionFive');
+const firstLetter = document.getElementById('firstLetter')
+const footer = document.getElementById('footerMenu')
 
 //o primeiro parametro do gsap é o elemento que quermos animar
 //o segundo parametro são as propriedades do css que quero definir o valor
@@ -118,3 +120,20 @@ tl.set('body', { overflow: 'hidden' })
     },
     '<',
   );
+
+
+
+
+  let tl3 = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.divSectionFotos',
+      start: 'bottom bottom',
+    },
+  });
+
+tl3.from(footer, {
+  opacity: 0,
+  duration: 1,
+  delay:0.2,
+  ease: 'linear',
+})

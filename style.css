@@ -439,3 +439,61 @@ body {
         height: 250px;
     }
 }
+
+/*
+criando variaveis para reutilizar no css
+*/
+:root{
+    --colorPurple: #9800ce;
+    --colorGrey: rgb(87,87,87);
+}
+
+.firstLetter{
+    display: flex;
+    justify-content: center;
+    color: var(--colorGrey);
+    font-weight: 600;
+    font-size: 3rem;
+    align-items: center;
+}
+
+.firstLetter span{
+    animation-name: brilho;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.firstLetter span:nth-of-type(2){
+    animation-delay: 0.25s;
+}
+
+.firstLetter span:nth-of-type(3){
+    animation-delay: 0.50s;
+}
+.firstLetter span:nth-of-type(4){
+    animation-delay: 0.75s;
+    
+}
+.firstLetter span:nth-of-type(5){
+    animation-delay: 1s;
+    
+}
+.firstLetter span:nth-of-type(6){
+    animation-delay: 1.25s;  
+}
+
+
+@keyframes brilho{
+
+    0%{
+        color:#fff;
+        text-shadow: 
+        0 0 0 50px var(--colorPurple), 0 0 75px var(--colorPurple),
+        0 0 100px (--colorPurple);
+    }10%,90%{
+        color: var(--colorGrey);
+        text-shadow: none;
+    }
+
+}
